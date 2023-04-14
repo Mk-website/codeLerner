@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML</title>
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/html.css">
+    <link rel="stylesheet" href="css/edcss.css">
+</head>
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+                <span><img src="img/mylogo.png" width="94px" alt=""></span>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="HTML.html">HTML</a></li>
+                <li><a href="CSS.html">CSS</a></li>
+                <li><a href="js.html">JavaScript</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="/search.html" method="get">
+                <input class="form-input" type="text" name="query" placeholder="Article Search">
+                <button class="btn">Search</button>
+            </form>
+
+        </div>
+
+    </nav>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="m-auto content bgjs max-width-1 my-2">
+        <div class="content-left">
+            <h1>JavaScript </h1>
+            <p>CodeLearner is a website which lets you submit an article which upon approval will be up on our website and you
+                can get a good amount of reach from here!</p>
+            <p>
+                JavaScript is a lightweight, cross-platform, and interpreted compiled programming language which is also known as the scripting language for webpages.
+                 It is well-known for the development of web pages, many non-browser environments also use it. 
+                JavaScript can be used for Client-side developments as well as Server-side developments.
+                 Javascript is both imperative and declarative type of language. 
+                JavaScript contains a standard library of objects, like Array, Date, and Math, and a core set of language elements like operators, control structures, and statements. 
+            </p></div>
+        <div class="content-right">
+            <img src="img/js.png" alt="iBlog">
+        </div>
+    </div>
+
+    <div class="max-width-1 m-auto">
+        <hr>
+        </div>
+
+    </div>
+    <div class="sidebar">
+        <header>JavaScript</header>
+        <ul>
+            <li><a href="#jsintro" class="sideItems" >Introduction</a></li>
+            <li><a href="#DataTypes" class="sideItems" >DataTypes</a></li>
+            <li><a href="#variables" class="sideItems" >variables</a></li>
+            <li><a href="#functions" class="sideItems" >functions</a></li>
+            <li><a href="#strings" class="sideItems" >strings</a></li>
+            <li><a href="#array" class="sideItems" >array</a></li>
+        
+        </ul>
+    </div>
+    <div class="ht">
+ <div class="mainleft">
+    <section id="jsintro" class="htmldisplayarea">
+        <h1>What is JS?</h1>
+        <ul>
+            <li>JS stands for JavaScript</li>
+            <li>JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web.
+                JavaScript is easy to learn. This tutorial will teach you JavaScript from basic to advanced.</li>
+            <li>JavaScript and Java are completely different languages, both in concept and design. JavaScript was invented by
+                Brendan Eich in 1995, and became an ECMA standard in 1997.</li>
+            <li>JavaScript Can Change HTML Content</li>
+        </ul>
+        <h1>Features of Javascript</h1>
+        <ul>
+            <li>Javascript executes the client-side script in the browser.</li>
+            <li>Events are actions. Javascript provides event-handling options.</li>
+            <li>As Javascript is not a compiled language, source code never changes to byte code before running time. Low-end devices can also run Javascript because of its lightweight feature.</li>
+            <li>In Javascript, names, variables, keywords, and functions are case-sensitive.</li>
+            <li>Javascript will run in the same way in all systems with any operating system.</li>
+        </ul>
+        <p>Basic JavaScript Program to write message</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script&gt;
+    document.write("Hello World");
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </textarea>
+    </section>
+    <section id="DataTypes" class="htmldisplayarea d-none">
+        <h1>Data Types</h1>
+        <p>JavaScript has 8 Datatypes:</p>
+        <ol>
+            <li>String</li>
+            <li>Number</li>
+            <li>Bigint</li>
+            <li>Boolean</li>
+            <li>Undefined</li>
+            <li>Null</li>
+            <li>Symbol</li>
+            <li>Object</li>
+        </ol>
+        <p>String Data Type Example</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+&lt;script&gt;
+let msg = "Hello";
+document.write(msg);
+&lt;/script&gt;
+           </textarea>
+        <p>Number Data Type Example</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+&lt;script&gt;
+let num1 = 10;
+let num2 = 29.3;
+document.write(num1);
+document.write("&lt;br&gt;");
+document.write(num2);
+&lt;/script&gt;
+           </textarea>
+        <p>Boolean Data Type Example</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+&lt;script&gt;
+let eval = true;
+document.write(eval);
+&lt;/script&gt;
+            </textarea>
+        <p>Object Data Type Example</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+&lt;script&gt;
+const person = {firstName:"Mark", lastName:"Harry"};
+document.write(person.firstName+" "+person.lastName);
+&lt;/script&gt;
+        </textarea>
+        <p>Array Object Example</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+&lt;script&gt;
+const fruit = ["Apple", "Banana", "Litchi", "Strawberry"];
+document.write("First fruit of array is " + fruit[0]);
+&lt;/script&gt;
+            </textarea>
+        <p>Date Object Example</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+&lt;script&gt;
+const date = new Date("2022-03-25");
+document.write(date.getFullYear());
+&lt;/script&gt;
+           </textarea>
+    </section> 
+    <section id="variables" class="htmldisplayarea d-none">
+        <h1>Variables</h1>
+        <p>In a programming language, variables are used to store data values.</p>
+        <p>JavaScript uses the keywords var, let and const to declare variables.</p>
+        <p>An equal sign is used to assign values to variables.</p>
+        <table>
+            <tr>
+                <th>Keyword</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>var</td>
+                <td>Declares a variable</td>
+            </tr>
+            <tr>
+                <td>let</td>
+                <td>Declares a block variable</td>
+            </tr>
+            <tr>
+                <td>const</td>
+                <td>Declares a block constant</td>
+            </tr>
+        </table>
+        <p>Basic Example to show difference between var and let</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+            
+&lt;script&gt;
+let a = 10;
+{
+let a = 70;
+document.write("a (inside block) = " + a+"&lt;br&gt;")
+}
+document.write("a (outside block) = " + a+"&lt;br&gt;");
+var b = 10;
+{
+var b = 70;
+document.write("b (inside block) = " + b +"&lt;br&gt;")
+}
+document.write("b (outside block) = " + b + "&lt;br&gt;");
+&lt;/script&gt;
+            
+            
+        </textarea>
+        
+    </section>
+    <section id="functions" class="htmldisplayarea d-none">
+        <h1>JavaScript Functions</h1>
+        <p>A JavaScript function is a block of code designed to perform a particular task.</p>
+        <p>A JavaScript function is executed when "something" invokes it (calls it).</p>
+        <h1>Basic Syntax</h1>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+            
+function name(parameter1, parameter2, parameter3) {
+// code to be executed
+}
+            
+        </textarea>
+        <h1>Why Functions?</h1>
+        <p>You can reuse code: Define the code once, and use it many times.</p>
+        <p>You can use the same code many times with different arguments, to produce different results.</p>
+        <p>Basic Function Converting temperature Fahrenheit to Celsius </p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+            
+&lt;script&gt;
+function toCelsius(fah){
+return (5/9) * (fah - 32);
+}
+document.write("28F = " +toCelsius(28) + "C");
+&lt;/script&gt;
+            
+            
+        </textarea>
+    </section>
+    <section id="strings" class="htmldisplayarea d-none">
+        <h1>Strings</h1>
+        <p>JavaScript strings are for storing and manipulating text.</p>
+        <p>A JavaScript string is zero or more characters written inside quotes.</p>
+
+        <p>Printing String Message</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+            
+&lt;script&gt;
+let msg = "Hello";
+document.write(msg);
+&lt;/script&gt;
+            
+            
+        </textarea>
+        <h1>String Length</h1>
+        <p>To find the length of a string, use the built-in length property:</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+            
+&lt;script&gt;
+let msg = "Hello";
+document.write("length of "+msg+" is "+msg.length);
+&lt;/script&gt;
+            
+            
+        </textarea>
+        <h1>String Content Replace</h1>
+        <p>The replace() method replaces a specified value with another value in a string.</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+            
+&lt;script&gt;
+let msg = "Hello, How are you Abhishek";
+document.write("Before Replacing: "+ msg + "&lt;br&gt;");
+let msg2 = msg.replace("Abhishek","Rohit");
+document.write("After Replacing: "+ msg2);
+&lt;/script&gt;
+            
+            
+        </textarea>
+        <h1>Changing Case</h1>
+        <p>We can change the string to uppercase and lowercase</p>
+        <p>Program for uppercase and lowercase</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+            
+&lt;script&gt;
+let msg = "Hello, How are you Abhishek";
+document.write("Upper Case String: "+ msg.toUpperCase()+"&lt;br&gt;");
+document.write("Lower Case String: "+ msg.toLowerCase());
+&lt;/script&gt;
+            
+            
+        </textarea>
+        <h1>Trim String</h1>
+        <p>The trim() method removes whitespace from both sides of a string.</p>
+        <p>The trimStart() method works like trim(), but removes whitespace only from the start of a string.</p>
+        <p>The trimEnd() method works like trim(), but removes whitespace only from the end of a string.</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+            
+&lt;script&gt;
+let msg = "        Hello World     d ";
+document.write("message length: "+msg.length+"&lt;br&gt;");
+document.write("trim length output: "+ msg.trim().length+"&lt;br&gt;");
+document.write("trimStart length output: "+ msg.trimStart().length+"&lt;br&gt;");
+document.write("trimEnd length output: "+ msg.trimEnd().length);
+&lt;/script&gt;
+            
+            
+        </textarea>
+    </section> 
+    <section id="array" class="htmldisplayarea d-none">
+        <h1>Arrays</h1>
+        <p>Arrays are object which holds the homogenous type of values</p>
+        <p>JavaScript arrays are written with square brackets.</p>
+        <p> Array items are separated by commas. </p>
+        <p>following code declares (creates) an array called cars, containing three items (car names):</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+            
+&lt;script&gt;
+const cars = ["Saab", "Volvo", "BMW"];
+document.write(cars);
+document.write("&lt;br&gt;" + "First Element of Array: " + cars[0])
+&lt;/script&gt;
+            
+            
+        </textarea>
+        <h1>Array Length</h1>
+        <p>The length property of an array returns the length of an array (the number of array elements).</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+            
+&lt;script&gt;
+const cars = ["Saab", "Volvo", "BMW"];
+document.write("Length of Array: "+ cars.length);
+&lt;/script&gt;
+            
+            
+        </textarea>
+        <h1>Adding Array Element</h1>
+        <p>Push method used to add array element at </p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+            
+&lt;script&gt;
+const cars = ["Saab", "Volvo", "BMW"];
+document.write(cars+"&lt;br&gt;");
+cars.push("Maruti");
+document.write("Updated Array: "+ cars);
+&lt;/script&gt;
+            
+            
+        </textarea>
+        <p>The unshift method adds a new element to an array (at the beginning), and "unshifts" older elements.</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+            
+&lt;script&gt;
+const cars = ["Saab", "Volvo", "BMW"];
+document.write(cars+"&lt;br&gt;");
+cars.unshift("Maruti");
+document.write("Updated Array: "+ cars);
+&lt;/script&gt;
+            
+            
+        </textarea>
+        <h1>Removing Array Elements</h1>
+        <p>The pop method removes the last element from an array</p>
+        <p>It returns the removed element</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+            
+&lt;script&gt;
+const cars = ["Saab", "Volvo", "BMW"];
+document.write(cars+"&lt;br&gt;");
+cars.pop();
+document.write("Updated Array: "+ cars);
+&lt;/script&gt;
+            
+            
+        </textarea>
+        <p>The shift method removes the first array element and "shifts" all other elements to a lower index.</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+            
+&lt;script&gt;
+const cars = ["Saab", "Volvo", "BMW"];
+document.write(cars+"&lt;br&gt;");
+cars.shift();
+document.write("Updated Array: "+ cars);
+&lt;/script&gt;
+            
+            
+        </textarea>
+    </section> 
+</div>
+<div class="mainright">
+    <h1>Code Editor with Run Functionality</h1>
+<textarea id="editor">// Type your HTML/CSS/JavaScript code here</textarea>
+<button id="run-btn">Run</button>
+<div id="result"></div>
+</div>
+</div>
+
+</div>
+    
+
+
+    <div class="footer">
+        <p>Copyright &copy; CodeLearner.com </p>
+        <a href="https://www.vecteezy.com/free-vector/typewriter">Vector Credits: Vecteezy</a>
+    </div>
+</body>
+</html>

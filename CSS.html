@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML</title>
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/edcss.css">
+    <link rel="stylesheet" href="css/html.css">
+</head>
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+                <span><img src="img/mylogo.png" width="94px" alt=""></span>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="HTML.html">HTML</a></li>
+                <li><a href="CSS.html">CSS</a></li>
+                <li><a href="js.html">JavaScript</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="/search.html" method="get">
+                <input class="form-input" type="text" name="query" placeholder="Article Search">
+                <button class="btn">Search</button>
+            </form>
+
+        </div>
+
+    </nav>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="m-auto content bgC max-width-1 my-2">
+        <div class="content-left">
+            <h1>Cascading Style Sheets(CSS) </h1>
+            <p>CodeLearner is a website which lets you submit an article which upon approval will be up on our website and you
+                can get a good amount of reach from here!</p>
+            <p>
+                Cascading Style Sheets, fondly referred to as CSS, is a simply designed language intended to simplify the process of making web pages presentable. 
+                CSS allows you to apply styles to web pages.
+                 More importantly, CSS enables you to do this independent of the HTML that makes up each web page. 
+                 It describes how a webpage should look: it prescribes colors, fonts, spacing, and much more.
+                  In short, you can make your website look however you want. 
+                 CSS lets developers and designers define how it behaves, 
+                 including how elements are positioned in the browser.
+            </p></div>
+        <div class="content-right">
+            <img src="img/1452px-CSS3_logo_and_wordmark.svg.png" alt="iBlog">
+        </div>
+    </div>
+
+    <div class="max-width-1 m-auto">
+        <hr>
+        </div>
+    </div>
+    <div class="sidebar">
+        <header>CSS</header>
+        <ul>
+            <li><a href="#cssintro" class="sideItems" >Introduction</a></li>
+            <li><a href="#colors" class="sideItems" >CSS Colors</a></li>
+            <li><a href="#txtFormatting" class="sideItems" >Text Formatting</a></li>
+            <li><a href="#pad-mar" class="sideItems" >Padding/Margin</a></li>
+        </ul>
+    </div>
+    <div class="ht">
+
+        <div class="mainleft">
+            <section id="cssintro" class="htmldisplayarea">
+                <h1>What is CSS?</h1>
+                <ul>
+                    <li>CSS stands for Cascading Style Sheet</li>
+                    <li>Cascading Style Sheets (CSS) is used to format the layout of a webpage.</li>
+                </ul>
+                <p>With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are
+                    positioned and laid out, what background images or background colors are to be used, different displays for different
+                    devices and screen sizes, and much more!
+                </p>
+                <h1>Using CSS</h1>
+                <p>CSS can be added to HTML documents in 3 ways:</p>
+                <ol>
+                    <li>Inline</li>
+                    <li>Internal</li>
+                    <li>External</li>
+                </ol>
+                <h1>Inline CSS</h1>
+                <p>An inline CSS is used to apply a unique style to a single HTML element.</p>
+                <p>An inline CSS uses the style attribute of an HTML element.</p>
+                
+                <h2 style="margin: 10px;">Basic Example:</h2>
+               <textarea name="code" readonly id="" cols="30" rows="10">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 style="color:blue;" &gt;My First Heading&lt;/h1&gt;
+        &lt;p style="color:red;" &gt;My first paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+               </textarea>
+                <h1>Internal CSS</h1>
+                <p>An internal CSS is used to define a style for a single HTML page.</p>
+                <p>An internal CSS is defined in the &lt;head&gt; section of an HTML page, within a &lt;style&gt; element.</p>
+                <p>Achieved with the use of selectors(defines single or multiple element of html)</p>
+                <h2 style="margin: 10px;">Basic Example:</h2>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+        &lt;style&gt;
+            body {background-color: powderblue;}
+            h1   {color: blue;}
+            p    {color: red;}
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;My First Heading&lt;/h1&gt;
+        &lt;p&gt;My first paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </textarea>
+                <h1>External CSS</h1>
+                <p>An external style sheet is used to define the style for many HTML pages</p>
+                <p>To use an external style sheet, add a link to it in the &lt;head&gt; section of each HTML page:</p>
+                <p>Achieved with the use of selectors(defines single or multiple element of html)</p>
+    <textarea name="code" readonly id="" cols="30" rows="10">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+        &lt;link rel = "stylesheet" href = "path of css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </textarea>
+            </section>
+            <section id="colors" class="htmldisplayarea">
+                <h1>CSS Colors</h1>
+                <p>We can use colors in three types:</p>
+                <ol>
+                    <li>Using Color Name like red, blue, white, etc</li>
+                    <li>Using Hex Code like #fff</li>
+                    <li>using rgb like rgb(f,f,f)</li>
+                </ol>
+                <p>Text Color Example</p>
+                <textarea name="code" readonly id="" cols="30" rows="10">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 style="color:blue;"&gt;My First Heading&lt;/h1&gt;
+        &lt;p style="color:red;"&gt;My first paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </textarea>
+                <p>background Color Example</p>
+                <textarea name="code" id="" cols="30" rows="10">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body style="background-color:black;"&gt;
+        &lt;h1 style="color:white;"&gt;My First Heading&lt;/h1&gt;
+        &lt;p style="color:white;"&gt;My first paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </textarea>
+                <p>CSS Border Color</p>
+                <textarea name="code" readonly id="" cols="30" >
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body style="background-color:black;"&gt;
+        &lt;h1 style="color:white; border ="1px solid white"&gt;My First Heading&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </textarea>
+    </section>
+    <section id="txtFormatting" class="htmldisplayarea">
+        <h1>Text Alignment</h1>
+        <p>The text-align property is used to set the horizontal alignment of a text.</p>
+        <p>A text can be left or right aligned, centered, or justified.</p>
+        
+        <p>Basic Example</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p style = "text-align: center;" &gt; Centered aligned Text &lt;/p&gt;
+&lt;p style = "text-align: left;" &gt; Left aligned Text &lt;/p&gt;
+&lt;p style = "text-align: right;" &gt; Right aligned Text &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </textarea>
+        <h1>Font Family</h1>
+        <p>The font-family property is used to set the font style of a text.</p>
+        
+        <p>Basic Example</p>
+<textarea name="code" readonly id="" cols="30" rows="10">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p style = "font-family: monospace;" &gt; This is monospace font &lt;/p&gt;
+&lt;p&gt; This is default font &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </textarea>
+        <h1>Font Size</h1>
+        <p>The font-size property is used to set the font size of a text.</p>
+        
+        <p>Basic Example</p>
+        <textarea name="code" id="" cols="30" rows="10">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p style = "font-size: 30px;" &gt; Large Text &lt;/p&gt;
+&lt;p&gt; This is Normal Text &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </textarea>
+        <h1>Text Decoration</h1>
+        <p>The text-decoration property is used to set the underline for a text.</p>
+        <p>Value can be any style like dotted, double, solid,...etc</p>
+        <p>Basic Example</p>
+    <textarea name="code" readonly id="" cols="30" rows="10">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p style = "text-decoration: underline #f00 solid; font-size:25px;" &gt; Underlined Text &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+<section id="pad-mar" class="htmldisplayarea">
+    <h1>CSS Padding</h1>
+    <p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</p>
+    <p>All the padding properties can have the following values:</p>
+    <ul>
+        <li>length - specifies a padding in px, pt, cm, etc.</li>
+        <li>Percent - specifies a padding in % of the width of the containing element</li>
+        <li>inherit - specifies that the padding should be inherited from the parent element</li>
+    </ul>
+    <p>Note: Negative values are not allowed.</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p style="padding: 10px; border:1px solid black;"&gt;Hello World&lt;/p&gt
+&lt;p style="padding-left: 50px; border:1px solid black;"&gt;Padding from left&lt;/p&gt
+&lt;/body&gt;
+&lt;/html&gt;
+         </textarea>
+        <h1>CSS Margin</h1>
+        <p>The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
+        <p>All the margin properties can have the following values:</p>
+        <ul>
+            <li>auto - the browser calculates the margin</li>
+            <li>length - specifies a margin in px, pt, cm, etc.</li>
+            <li>Percent - specifies a margin in % of the width of the containing element</li>
+            <li>inherit - specifies that the margin should be inherited from the parent element</li>
+        </ul>
+        <p>Note: Negative values are allowed.</p>
+        <textarea name="code" readonly id="" cols="30" rows="10">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p style="margin: 10px; border:1px solid black;"&gt;Hello World&lt;/p&gt
+&lt;p style="margin-top: 50px; border:1px solid black;"&gt;Margin from top&lt;/p&gt
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</section>
+   
+    
+</section>
+        </div>
+        <div class="mainright">
+            <h1>Code Editor with Run Functionality</h1>
+    <textarea id="editor">// Type your HTML/CSS/JavaScript code here</textarea>
+    <button id="run-btn">Run</button>
+    <div id="result"></div>
+        </div>
+     </div>
+     
+
+    <div class="footer">
+        <p>Copyright &copy; CodeLearner.com </p>
+        <a href="https://www.vecteezy.com/free-vector/typewriter">Vector Credits: Vecteezy</a>
+    </div>
+</body>
+</html>

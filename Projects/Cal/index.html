@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!--n na bv Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+body {
+ font-size: 15pt;
+ background: black;
+}
+.calculator{
+  text-align: center;
+}
+  
+      #screen{
+        width: 250px;
+        height: 70px;
+        font-size: 35px;
+        color: #06FF00;
+        border: 10px solid black;
+        border-radius: 30px;
+        background: red;
+      }
+     td,tr{
+        background: black;
+        border-radius: 15px;
+       
+      }
+ 
+      
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'source sans pro', sans-serif;
+}
+
+
+  </style>
+</head>
+
+<body>
+  
+  <h1>My Calculator</h1>
+  <b>Click ON button to start calculator</b><br>
+      <button type="button" onclick ="myFunc()"> On </button>
+      <button onclick="location.reload()" id="off">off</button>
+
+  <div class="calculator">
+
+        <input type="text" name="screen" id="screen" placeholder="type here" readonly/>
+        
+  <table border="1" id="button">
+    
+    <tr>
+    
+   <td><button>X</button></td>
+       <td><button>-</button></tyd>
+       <td><button>/</button></td>
+             <td><button>C</button></td>
+             </tr>
+
+        <tr>
+        <td><button>7</button></td>
+      <td><button>8</button></td>
+      <td><button>9</button></td>
+
+  <td rowspan="2"><button>+</button></td>
+        
+        </tr>
+            <tr>
+          <td><button>6</button></td>
+          <td><button>5</button></td>
+          <td><button>4</button></td>
+          
+          </tr>
+          <tr>
+            
+       
+     <td><button>3</button></td>
+         <td><button>2</button></td>
+              <td><button>1</button></td>
+      <td rowspan="2"><button>=</button></td>
+            </tr>
+                <tr>
+      <td><button>%</button></td>
+      <td><button>0</button></td>
+      <td><button>.</button></td>
+
+      
+    </tr>
+ 
+      </table></div>
+   
+
+
+  <!-- Project -->
+  <script>
+  console.log('Hello World!');
+function myFunc(){
+  let screen = document.getElementById('screen');
+      buttons = document.querySelectorAll('button');
+      let screenValue = '';
+      let off = document.getElementById('off')
+   
+      for (item of buttons) {
+        item.addEventListener('click', (e) => {
+          buttonText = e.target.innerText;
+         
+          console.log('button', buttonText);
+          if (buttonText == 'X') {
+            buttonText = '*';
+            screenValue += buttonText;
+            screen.value = screenValue;
+          }
+          else if (buttonText == 'C') {
+            screenValue = '';
+            screen.value = screenValue;
+          }
+          else if (buttonText == '=') {
+            screen.value = eval(screenValue);
+          }
+else if (buttonText == 'off') {
+  screenValue += 'Calculator off';
+  screen.value = screenValue;
+}
+else if (buttonText == 'On') {
+  screenValue += 'Calculator On';
+  screen.value = screenValue;
+}
+          else {
+            screenValue += buttonText;
+            screen.value = screenValue;
+          }
+        })
+      }}
+      
+    
+/*
+function my1(){
+  document.querySelector('#text').className = 'text';
+}
+function button(){
+var elements = document.getElementsByTagName("button");
+ 
+ // let's access each selected element
+ for (let i = 0; i < elements.length; i++) {
+   // let's style each selected element
+   elements[i].setAttribute("style","font-size: 20px;  background:#4cee3c ;height: 50px; width: 50px; border: 2px solid  blue; border-radius: 12px;")
+ }
+  
+}
+function tab(){
+ var ele = document.getElementsByTagName("table");
+ for (let i = 0; i < ele.length; i++){
+   ele[i].setAttribute("style","width: 300px;height: 250px;border: 10px;solid red;  border-radius: 30px;margin: auto;font-size: 25px;background: red;");
+ }
+}
+function s(){
+let a = document.getElementById('m').value;
+switch(a){
+case ("heading"):
+  my1();
+  console.log('task complete');
+  alert('your calculator is update');
+  break;
+  case ("button"):
+    button();
+    break;
+    case ("table"):
+      tab();
+      break;
+    default:
+    console.log('error');
+}
+}
+*/
+      </script>
+</body>
+</html>

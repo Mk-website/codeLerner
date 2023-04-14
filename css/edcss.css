@@ -1,0 +1,30 @@
+#editor {
+    width: 40%;
+    height: 300px;
+    font-size: 16px;
+    font-family: monospace;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+  #result {
+    width: 40%;
+    height: 300px;
+    font-size: 16px;
+    font-family: monospace;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left: 15px;
+    float: left;
+  }
+  #run-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

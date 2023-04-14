@@ -1,0 +1,54 @@
+.pro
+{
+  align-items: center;
+  justify-content: center;
+ margin: auto;
+  padding: 18px;
+  background-color: rgb(248, 239, 239, 0.5);
+  max-width: 1000px;
+}
+
+#pro
+{
+  height: 200px;
+  width: 400px;
+  margin: 0px;
+  position: relative;
+  left: 270px;
+  margin-top:20px ;
+  
+}
+
+
+
+
+.bgC::after{
+    content: "";
+    background-image: url("../img/cssbg.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    border-radius: 12px;
+  }
+  .bgjs::after{
+    content: "";
+    background-image: url("../img/jsbg.avif");
+    
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    border-radius: 12px;
+  }
+  .bgHTML::after{
+    content: "";
+    background-image: url("../img/htmlbg2.jpg");
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    border-radius: 12px;
+  }
