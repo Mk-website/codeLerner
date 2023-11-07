@@ -317,5 +317,9 @@ section ul li
   position: relative;
   left: 150%;
 }
-
+#txt{
+ margin-left: 15%;
+ background-color: black;
+ color: #8df8f8;
+}
 

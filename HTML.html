@@ -54,13 +54,13 @@
         <div class="content-right">
             <img src="img/HTML5_logo_and_wordmark.svg.png" alt="iBlog">
         </div>
-        </div>
+    </div>
 
 
 
-        <div class="max-width-1 m-auto">
-            <hr>
-        </div>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
 
     </div>
     <div class="sidebar">
@@ -103,7 +103,7 @@
 
                     The visible part of the HTML document is between &lt;body&gt; and &lt;/body&gt;.</p>
                 <div class="txt">
-                    <textarea name="code" id="" cols="15" rows="10" readonly>
+                    <textarea name="code" id="txt" readonly>
                &lt;!DOCTYPE html&gt;
        &lt;html&gt;
        &lt;body&gt;
@@ -133,7 +133,7 @@
 
             </p>
             <div class="txt">
-                <textarea name="code" id="" cols="15" rows="10" readonly>
+                <textarea name="code" id="txt" cols="15" rows="10" readonly>
             &lt;html&gt; 
             &lt;head&gt; 
             &lt;title&gt;Page title&lt;/title&gt; 
@@ -173,7 +173,7 @@
                     <li>&lt;ul&gt; tag has its corresponding &lt;/ul&gt; tag.</li>
                     <li>For items, we use &lt;li&gt; tag also known as the List Item tag.</li>
                 </ul>
-                <textarea name="code" id="" cols="30" rows="10" readonly>
+                <textarea name="code" id="txt" cols="30" rows="10" readonly>
                                 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -221,7 +221,7 @@
                 <p>For &lt;ol&gt; tag, the start attribute is used to specify the starting of numbering.</p>
                 <h1>Basic Example</h1><br>
                 <div class="txt">
-                    <textarea name="code" id="" cols="15" rows="10" readonly>
+                    <textarea name="code" id="txt" cols="15" rows="10" readonly>
 
                             &lt;!DOCTYPE html&gt;
                             &lt;html&gt;
@@ -252,7 +252,7 @@
                     <li>Dictionary is used for describing the term similarly in HTML we use a Definition List or
                         Description List to define a term.</li>
                 </ul>
-                <textarea name="code" id="" cols="30" rows="10" readonly>
+                <textarea name="code" id="txt" cols="30" rows="10" readonly>
                         &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -301,7 +301,7 @@
                     height or width attribute must be in pixel(default) or percentage and value should be placed in
                     double quotes otherwise we can see an error.</p>
                 <h1>Basic Example of Image</h1>
-                <textarea name="code" id="" cols="30" rows="10" readonly>
+                <textarea name="code" id="txt" cols="30" rows="10" readonly>
                         &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -326,7 +326,7 @@
                 <p>Sometimes you want your cells to be table header cells. In those cases use the &lt;th&gt; tag instead
                     of the &lt;td&gt; tag. th
                     stands for table header.</p>
-                <textarea name="code" id="" cols="30" rows="10" readonly>
+                <textarea name="code" id="txt" cols="30" rows="10" readonly>
                             &lt;!DOCTYPE html&gt;
                             &lt;html&gt;
                                 &lt;head&gt;
@@ -356,7 +356,7 @@
                 <h1>Rowspan & Colspan attribute</h1>
                 <p>To make a cell span over multiple rows, use the rowspan attribute.</p>
                 <p>To make a cell span over multiple columns, use the colspan attribute.</p>
-                <textarea name="code" id="" cols="30" rows="10" readonly>
+                <textarea name="code" id="txt" cols="30" rows="10" readonly>
                         &lt;!DOCTYPE html&gt;
                         &lt;html&gt;
                             &lt;head&gt;
@@ -409,7 +409,7 @@
                     </li>
                 </ol>
                 <h1>Basic Example</h1>
-                <textarea name="code" readonly id="" cols="30" rows="10">
+                <textarea name="code" readonly id="txt" cols="30" rows="10">
                             &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -432,7 +432,7 @@
                     <li>Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:</li>
                 </ol>
                 <h1>Example</h1>
-                <textarea name="code" readonly id="" cols="30" rows="10">
+                <textarea name="code" readonly id="txt" cols="30" rows="10">
                             &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -492,7 +492,7 @@
     &lt;/body&gt;
 &lt;/html&gt;
                         </textarea>
-                        <h1>Link Colors</h1>
+                <h1>Link Colors</h1>
                 <p>Three types of links are there: active, visited, and unvisited.</p>
                 <ul>
                     <li>Active: It is in red with an underline.</li>
@@ -505,11 +505,12 @@
                 <h1>HTML Frames</h1>
                 <p>The HTML &lt;iframe&gt; tag specifies an inline frame.</p>
                 <p>An inline frame is used to embed another document within the current HTML document.</p>
-                <p>Tip: It is a good practice to always include a title attribute for the &lt;iframe&gt;. This is used by screen readers to read out what the content of the iframe is.</p>
+                <p>Tip: It is a good practice to always include a title attribute for the &lt;iframe&gt;. This is used
+                    by screen readers to read out what the content of the iframe is.</p>
                 <h1>height/width Attribute</h1>
                 <p>Use the height and width attributes to specify the size of the iframe.</p>
                 <p>The height and width are specified in pixels by default.</p>
-               <textarea name="code" id="" cols="30" rows="10" readonly>
+                <textarea name="code" id="txt" cols="30" rows="10" readonly>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -520,10 +521,10 @@
     &lt;/body&gt;
 &lt;/html&gt;
 </textarea>
-<h1>Target for a Link</h1>
+                <h1>Target for a Link</h1>
                 <p>An iframe can be used as the target frame for a link.</p>
                 <p>The target attribute of the link must refer to the name attribute of the iframe:</p>
-               <textarea name="code" readonly id="" cols="30" rows="10">
+                <textarea name="code" readonly id="txt" cols="30" rows="10">
                 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -535,75 +536,78 @@
 &lt;/body&gt;
 &lt;/html&gt;
                 </textarea>
-</section>
-<section id="form" class="sec_container">
-    <h1>HTML Forms</h1>
-    <p>Forms are the interactive part of the web page. They are used to take user’s input in different ways. These inputs are taken using various controls. The data collected by these controls can be used for processing, storing etc.</p>
-    <p>The HTML &lt;form&gt; element is used to create an HTML form for user input</p>
-    <p>The &lt;form&gt; element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p>
-    <h1>The &lt;input&gt; Element</h1>
-    <p>HTML &lt;input&gt; element is the most used form element.</p>
-    <p>&lt;input&gt; is self closing tag</p>
-    <p>An &lt;input&gt; element can be displayed in many ways, depending on the type attribute.</p>
-    <table>
-        <tr>
-            <th>Type</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>text</td>
-            <td>Displays a single-line text input field</td>
-        </tr>
-        <tr>
-            <td>email</td>
-            <td>Displays a single-line text input field for email only</td>
-        </tr>
-        <tr>
-            <td>password</td>
-            <td>Displays a single-line text input field for passwords (hide characters)</td>
-        </tr>
-        <tr>
-            <td>radio</td>
-            <td>Displays a radio button (for selecting one of many choices)</td>
-        </tr>
-        <tr>
-            <td>checkbox</td>
-            <td>Displays a checkbox (for selecting zero or more of many choices)</td>
-        </tr>
-        <tr>
-            <td>submit</td>
-            <td>Displays a submit button (for submitting the form)</td>
-        </tr>
-        <tr>
-            <td>reset</td>
-            <td>Displays a submit button (for reset all the inputs of form)</td>
-        </tr>
-    </table>
-    <h1>input tag Attributes</h1>
-    <table>
-        <tr>
-            <th>Attribute</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>value</td>
-            <td>defines value to be stored in database</td>
-        </tr>
-        <tr>
-            <td>required</td>
-            <td>specifies that an input field must be filled out before submitting the form</td>
-        </tr>
-        <tr>
-            <td>height/width</td>
-            <td>specifies height and width of input tag</td>
-        </tr>
-        <tr>
-            <td>name</td>
-            <td>a reference when the data is submitted</td>
-        </tr>
-    </table>
-    <h1>Input Examples</h1>
-    <textarea name="code" id="" cols="30" rows="10">
+            </section>
+            <section id="form" class="sec_container">
+                <h1>HTML Forms</h1>
+                <p>Forms are the interactive part of the web page. They are used to take user’s input in different ways.
+                    These inputs are taken using various controls. The data collected by these controls can be used for
+                    processing, storing etc.</p>
+                <p>The HTML &lt;form&gt; element is used to create an HTML form for user input</p>
+                <p>The &lt;form&gt; element is a container for different types of input elements, such as: text fields,
+                    checkboxes, radio buttons, submit buttons, etc.</p>
+                <h1>The &lt;input&gt; Element</h1>
+                <p>HTML &lt;input&gt; element is the most used form element.</p>
+                <p>&lt;input&gt; is self closing tag</p>
+                <p>An &lt;input&gt; element can be displayed in many ways, depending on the type attribute.</p>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>text</td>
+                        <td>Displays a single-line text input field</td>
+                    </tr>
+                    <tr>
+                        <td>email</td>
+                        <td>Displays a single-line text input field for email only</td>
+                    </tr>
+                    <tr>
+                        <td>password</td>
+                        <td>Displays a single-line text input field for passwords (hide characters)</td>
+                    </tr>
+                    <tr>
+                        <td>radio</td>
+                        <td>Displays a radio button (for selecting one of many choices)</td>
+                    </tr>
+                    <tr>
+                        <td>checkbox</td>
+                        <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+                    </tr>
+                    <tr>
+                        <td>submit</td>
+                        <td>Displays a submit button (for submitting the form)</td>
+                    </tr>
+                    <tr>
+                        <td>reset</td>
+                        <td>Displays a submit button (for reset all the inputs of form)</td>
+                    </tr>
+                </table>
+                <h1>input tag Attributes</h1>
+                <table>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>value</td>
+                        <td>defines value to be stored in database</td>
+                    </tr>
+                    <tr>
+                        <td>required</td>
+                        <td>specifies that an input field must be filled out before submitting the form</td>
+                    </tr>
+                    <tr>
+                        <td>height/width</td>
+                        <td>specifies height and width of input tag</td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>a reference when the data is submitted</td>
+                    </tr>
+                </table>
+                <h1>Input Examples</h1>
+                <textarea name="code" id="txt" cols="30" rows="10">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -630,11 +634,11 @@
 &lt;/html&gt;
 </textarea>
 
-    
-</section>
 
-</section>
-</section>
+            </section>
+
+            </section>
+            </section>
 
         </div>
 
